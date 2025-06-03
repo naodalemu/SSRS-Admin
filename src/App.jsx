@@ -27,6 +27,7 @@ import StaffShiftAssignment from "./components/staff/StaffShiftAssignment";
 import ShiftTemplateManagement from "./components/staff/ShiftTemplateManagement";
 import ShiftCalendarView from "./components/staff/ShiftCalendarView";
 import Payroll from "./components/staff/Payroll";
+import AdminSignUp from "./components/auth/AdminSignUp";
 
 function Layout() {
   return (
@@ -161,6 +162,15 @@ function Layout() {
               element={
                 <PrivateRoute>
                   <Feedbacks />
+                </PrivateRoute>
+              }
+            />
+            {/* Admin */}
+            <Route
+              path="/admin"
+              element={
+                <PrivateRoute>
+                  <AdminSignUp />
                 </PrivateRoute>
               }
             />

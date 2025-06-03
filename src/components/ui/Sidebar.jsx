@@ -6,6 +6,7 @@ import {
   FaPen,
   FaTags,
   FaUsers,
+  FaShieldAlt,
 } from "react-icons/fa";
 import { MdDashboard } from "react-icons/md";
 import { Link } from "react-router-dom";
@@ -27,6 +28,7 @@ const menuItems = [
     link: "components",
   },
   { icon: <FaUsers size={20} />, label: "Staff", link: "staff" },
+  { icon: <FaShieldAlt size={20} />, label: "Admin", link: "admin" },
 ];
 
 export default function Sidebar() {
