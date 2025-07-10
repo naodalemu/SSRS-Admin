@@ -26,7 +26,7 @@ export default function MenuItemCard({
         {/* Image */}
         <div className="flex-shrink-0">
           <img
-            src={`${import.meta.env.VITE_BASE_URL}/storage/${menuItem.image}`}
+            src={`${import.meta.env.VITE_BASE_URL}/images/${menuItem.image}`}
             alt={menuItem.name}
             className="w-20 h-20 object-cover rounded-md"
           />

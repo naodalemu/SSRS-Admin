@@ -302,7 +302,7 @@ function UpdateMenuItem() {
                     backgroundImage: newImage
                       ? `url(${URL.createObjectURL(image)})`
                       : image
-                      ? `url(${import.meta.env.VITE_BASE_URL}/storage/${image})`
+                      ? `url(${import.meta.env.VITE_BASE_URL}/images/${image})`
                       : "none",
                     backgroundSize: "cover",
                     backgroundPosition: "center",
